@@ -58,7 +58,7 @@
 
             display-name = "Base";
             bindings = <
-&tog 4      &kp Q              &kp W                &kp E           &kp R                  &kp T         &kp Y    &kp U                   &kp I           &kp O                 &kp P                   &kp BSPC
+&tog 4      &kp Q              &kp W                &kp E           &kp R                  &kp T         &kp Y    &kp U                   &kp I           &kp O                 &kp P                   &to 0
 &kp LCTRL   &hrm_l LEFT_ALT A  &hrm_l LEFT_SHIFT S  &hrm_l LCTRL D  &hrm_l LEFT_COMMAND F  &kp G         &kp H    &hrm_r RIGHT_COMMAND J  &hrm_r RCTRL K  &hrm_r RIGHT_SHIFT L  &hrm_r RIGHT_ALT TILDE  &kp SQT
 &caps_word  &kp Z              &kp X                &kp C           &kp V                  &kp B         &kp N    &kp M                   &kp COMMA       &kp DOT               &kp FSLH                &kp ESC
                                                     &mo 3           &lt 2 SPACE            &kp ESCAPE    &kp TAB  &lt 1 RET               &kp BACKSPACE
@@ -83,10 +83,10 @@
 
         numpad {
             bindings = <
-&tog 0  &trans  &trans  &trans  &trans        &trans       &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS  &kp BACKSPACE
-&trans  &trans  &trans  &trans  &trans        &trans       &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &trans
-&trans  &trans  &trans  &trans  &trans        &trans       &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &trans
-                        &trans  &kp KP_EQUAL  &kp SPACE    &kp ENTER     &kp TAB       &kp PERIOD
+&tog 0  &trans  &trans  &trans  &trans  &trans    &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS  &to 0
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &trans
+                        &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
 
@@ -99,7 +99,7 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
+&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &to 0
 &trans   &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
 &trans   &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
                          &trans  &trans  &trans    &trans    &trans    &trans
