@@ -58,10 +58,10 @@
 
             display-name = "Base";
             bindings = <
-&tog 2      &kp Q              &kp W                &kp E           &kp R                  &kp T        &kp Y    &kp U                   &kp I           &kp O                 &kp P                   &kp BSPC
-&kp LCTRL   &hrm_l LEFT_ALT A  &hrm_l LEFT_SHIFT S  &hrm_l LCTRL D  &hrm_l LEFT_COMMAND F  &kp G        &kp H    &hrm_r RIGHT_COMMAND J  &hrm_r RCTRL K  &hrm_r RIGHT_SHIFT L  &hrm_r RIGHT_ALT TILDE  &kp SQT
-&caps_word  &kp Z              &kp X                &kp C           &kp V                  &kp B        &kp N    &kp M                   &kp COMMA       &kp DOT               &kp FSLH                &kp ESC
-                                                    &mo 4           &kp ESC                &kp SPACE    &kp RET  &lt 1 TAB               &kp RALT
+&tog 4      &kp Q              &kp W                &kp E           &kp R                  &kp T         &kp Y    &kp U                   &kp I           &kp O                 &kp P                   &kp BSPC
+&kp LCTRL   &hrm_l LEFT_ALT A  &hrm_l LEFT_SHIFT S  &hrm_l LCTRL D  &hrm_l LEFT_COMMAND F  &kp G         &kp H    &hrm_r RIGHT_COMMAND J  &hrm_r RCTRL K  &hrm_r RIGHT_SHIFT L  &hrm_r RIGHT_ALT TILDE  &kp SQT
+&caps_word  &kp Z              &kp X                &kp C           &kp V                  &kp B         &kp N    &kp M                   &kp COMMA       &kp DOT               &kp FSLH                &kp ESC
+                                                    &mo 3           &lt 2 SPACE            &kp ESCAPE    &kp TAB  &lt 1 RET               &kp BACKSPACE
             >;
         };
 
@@ -90,15 +90,6 @@
             >;
         };
 
-        functions {
-            bindings = <
-&trans  &trans      &trans             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans      &trans             &trans                &trans                &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &kp C_PLAY_PAUSE      &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-                                       &trans                &trans                &trans    &trans  &trans  &trans
-            >;
-        };
-
         lower_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -108,10 +99,19 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
+&trans   &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+                         &trans  &trans  &trans    &trans    &trans    &trans
+            >;
+        };
+
+        functions {
+            bindings = <
+&trans  &trans      &trans             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &bt BT_CLR
+&trans  &trans      &trans             &trans                &trans                &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &bt BT_SEL 0
+&trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &kp C_PLAY_PAUSE      &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &bt BT_SEL 1
+                                       &trans                &trans                &trans    &trans  &trans  &trans
             >;
         };
     };
