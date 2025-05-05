@@ -145,5 +145,14 @@
                                        &trans                &trans                &trans    &trans  &trans  &trans
             >;
         };
+
+        civ {
+            bindings = <
+&to 0  &none     &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &kp LALT  &none  &kp F  &kp M  &none    &none  &none  &none  &none  &none  &none
+&none  &none     &none  &kp S  &kp B  &none    &none  &none  &none  &none  &none  &none
+                        &none  &none  &none    &none  &none  &none
+            >;
+        };
     };
 };
