@@ -136,6 +136,15 @@
             >;
         };
 
+        civ {
+            bindings = <
+&to 0  &none   &kp E   &none   &kp R   &none     &none  &none  &none  &none  &none  &none
+&none  &trans  &trans  &trans  &trans  &kp H     &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &kp M   &kp B     &none  &none  &none  &none  &none  &none
+                       &trans  &trans  &trans    &none  &none  &none
+            >;
+        };
+
         functions {
             display-name = "fun";
             bindings = <
@@ -143,15 +152,6 @@
 &trans  &trans      &trans             &trans                &trans                &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &bt BT_SEL 0
 &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &kp C_PLAY_PAUSE      &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &bt BT_SEL 1
                                        &trans                &trans                &trans    &trans  &trans  &trans
-            >;
-        };
-
-        civ {
-            bindings = <
-&to 0  &none     &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &kp LALT  &none  &kp F  &kp M  &none    &none  &none  &none  &none  &none  &none
-&none  &none     &none  &kp S  &kp B  &none    &none  &none  &none  &none  &none  &none
-                        &none  &none  &none    &none  &none  &none
             >;
         };
     };
