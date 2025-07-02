@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define HYPER LC(LA(LGUI))
+
 / {
     behaviors {
         hrm_l: hrm_l {
@@ -88,7 +90,7 @@
 &tog 4      &kp Q              &kp W                &kp E           &kp R                  &kp T         &kp Y    &kp U                   &kp I           &kp O                 &kp P                  &to 0
 &caps_word  &hrm_l LEFT_ALT A  &hrm_l LEFT_SHIFT S  &hrm_l LCTRL D  &hrm_l LEFT_COMMAND F  &kp G         &kp H    &hrm_r RIGHT_COMMAND J  &hrm_r RCTRL K  &hrm_r RIGHT_SHIFT L  &hrm_r RIGHT_ALT SEMI  &kp SQT
 &kp CARET   &kp Z              &kp X                &kp C           &kp V                  &kp B         &kp N    &kp M                   &kp COMMA       &kp DOT               &kp FSLH               &kp F4
-                                                    &mo 3           &lt 2 SPACE            &kp ESCAPE    &kp TAB  &lt 1 RET               &kp BACKSPACE
+                                                    &mo 3           &lt 2 SPACE            &kp ESCAPE    &mt HYPER TAB  &lt 1 RET               &kp BACKSPACE
             >;
         };
 
