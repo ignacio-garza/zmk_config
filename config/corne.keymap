@@ -105,7 +105,7 @@
             bindings = <
 &none  &kp LA(NUMBER_1)  &kp LS(NUMBER_2)  &kp MINUS         &kp LS(N7)  &kp LS(NUMBER_3)    &kp EQUAL      &kp LS(NUMBER_1)  &kp LA(LEFT_BRACKET)  &kp LA(RIGHT_BRACKET)  &kp LA(NON_US_BSLH)  &none
 &none  &trans            &trans            &trans            &trans      &kp LA(NUMBER_2)    &kp LS(EQUAL)  &kp LS(MINUS)     &kp LS(N8)            &kp LS(N9)             &kp F4                &none
-&none  &kp LEFT_BRACKET  &kp LA(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)  &kp LS(NUMBER_6)    &kp LS(GRAVE)  &kp GRAVE         &kp LA(APOS)          &kp LA(BACKSLASH)      &kp LA(N3)                 &none
+&none  &kp LEFT_BRACKET  &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_4)  &kp LS(N5)  &kp LS(NUMBER_6)    &kp LS(GRAVE)  &kp GRAVE         &kp LA(APOS)          &kp LA(BACKSLASH)      &kp LA(NUMBER_3)                 &none
                                            &trans            &trans      &trans              &trans         &trans            &trans
             >;
         };
